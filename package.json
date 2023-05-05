@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@emotion/react": "^11.10.8",
@@ -53,6 +54,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "prisma": "^4.13.0",
     "tailwindcss-animate": "^1.0.5"
   }
 }
