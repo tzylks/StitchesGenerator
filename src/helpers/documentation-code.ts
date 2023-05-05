@@ -1,7 +1,7 @@
 export const nodejs = `const axios = require("axios");
 const options = {
     method: 'POST',
-    url: 'http://localhost:3000.com/api/v1/generator',
+    url: 'http://stitches-generator.vercel.app/api/v1/generator',
     params: {
       element: 'div',
       name: 'StyledButton',
@@ -21,7 +21,7 @@ axios.request(options).then(function (response) {
 });`
 
 export const python = `import requests
-url = 'https://localhost:3000/api/v1/generator'
+url = 'https://stitches-generator.vercel.app/api/v1/generator'
 api_key = 'YOUR_API_KEY'
 element = 'div'
 name = 'StyledButton'
