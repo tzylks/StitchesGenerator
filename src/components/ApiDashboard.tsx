@@ -18,7 +18,11 @@ const ApiDashboard = async ({}) => {
         where: { userId: user.user.id },
     });
 
-    const activeApiKey = apiKeys.find((key: any) => key.enabled);
+    const activeApiKey = apiKeys.find(
+        (key: any) =>
+            //@ts-expect-error
+            key.enabled
+    );
 
     if (!activeApiKey) return notFound();
 

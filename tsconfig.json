@@ -50,5 +50,7 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+ 
+ 
 }
